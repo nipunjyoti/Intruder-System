@@ -28,7 +28,7 @@ while True:
             if buzzValue == 1 and lightValue == 1:
                 bolt.digitalWrite('0', 'HIGH')
                 print("Making request to Twilio to send a SMS")
-                response = sms.send_sms("An Intuder has breached your home ")  # Message to phone if someone enters home at that time
+                response = sms.send_sms("ALERT! Burglar in the House")  # Message to phone if someone enters home at that time
                 time.sleep(10)
         else:
             bolt.digitalWrite('3', 'LOW')
