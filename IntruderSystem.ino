@@ -24,7 +24,7 @@ void loop() {
   d2 = distance;
   if(digitalRead(boltWrite) == 1)
   {
-    if(d2 <= 40)//if distance is less than 40
+    if(d2 <= 20)//if distance is less than 40
     {
       digitalWrite(Buzz, HIGH);//turn the buzzer on
       digitalWrite(BoltDigital, HIGH);
